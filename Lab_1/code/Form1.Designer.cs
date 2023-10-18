@@ -1,4 +1,4 @@
-﻿namespace Lab_1
+namespace Lab_1
 {
     partial class Form1
     {
@@ -75,6 +75,8 @@
             this.H_Trackbar = new System.Windows.Forms.TrackBar();
             this.V_Trackbar = new System.Windows.Forms.TrackBar();
             this.HSV_Panel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.G_Trackbar)).BeginInit();
@@ -99,7 +101,7 @@
             this.tabControl1.Location = new System.Drawing.Point(3, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1024, 529);
+            this.tabControl1.Size = new System.Drawing.Size(1025, 529);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -120,7 +122,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1016, 500);
+            this.tabPage1.Size = new System.Drawing.Size(1017, 500);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "RGB";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -593,11 +595,22 @@
             this.HSV_Panel.Size = new System.Drawing.Size(350, 295);
             this.HSV_Panel.TabIndex = 1;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1060, 66);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(121, 68);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "ChooseColor";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1030, 536);
+            this.ClientSize = new System.Drawing.Size(1205, 536);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -671,6 +684,8 @@
         private System.Windows.Forms.Label V_Label;
         private System.Windows.Forms.Label S_Label;
         private System.Windows.Forms.Label H_Label;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
