@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -362,5 +362,19 @@ namespace Lab_1
         private int H = 0;
         private int V = 0;
         private int S = 0;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ColorDialog colorDialog = new ColorDialog();
+            colorDialog1.Color = this.BackColor;
+            colorDialog.AllowFullOpen = true;
+            colorDialog.ShowDialog();
+            R = colorDialog.Color.R;
+            G = colorDialog.Color.G;
+            B = colorDialog.Color.B;
+            convert_RGB_CMYK();
+            convert_RGB_HSV();
+            update_info();
+        }
     }
 }
