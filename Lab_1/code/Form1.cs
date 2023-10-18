@@ -105,90 +105,120 @@ namespace Lab_1
         }
         private void R_Textbox_TextChanged(object sender, EventArgs e)
         {
-            R = Int32.Parse(R_Textbox.Text);
-            //convertation
-            convert_RGB_CMYK();
-            convert_RGB_HSV();
-            update_info();
+            if (!String.IsNullOrEmpty(R_Textbox.Text))
+            {
+                R = Int32.Parse(R_Textbox.Text);
+                //convertation
+                convert_RGB_CMYK();
+                convert_RGB_HSV();
+                update_info();
+            }
         }
 
         private void G_Textbox_TextChanged(object sender, EventArgs e)
         {
-            G = Int32.Parse(G_Textbox.Text);
-            //convertation
-            convert_RGB_CMYK();
-            convert_RGB_HSV();
-            update_info();
+            if (!String.IsNullOrEmpty(G_Textbox.Text))
+            {
+                G = Int32.Parse(G_Textbox.Text);
+                //convertation
+                convert_RGB_CMYK();
+                convert_RGB_HSV();
+                update_info();
+            }
         }
 
         private void B_Textbox_TextChanged(object sender, EventArgs e)
         {
-            B = Int32.Parse(B_Textbox.Text);
-            //convertation
-            convert_RGB_CMYK();
-            convert_RGB_HSV();
-            update_info();
+            if (!String.IsNullOrEmpty(B_Textbox.Text))
+            {
+                B = Int32.Parse(B_Textbox.Text);
+                //convertation
+                convert_RGB_CMYK();
+                convert_RGB_HSV();
+                update_info();
+            }
         }
         private void C_Textbox_TextChanged(object sender, EventArgs e)
         {
-            C = Int32.Parse(C_Textbox.Text);
-            //convertation
-            convert_CMYK_RGB();
-            convert_RGB_HSV();
-            update_info();
+            if (!String.IsNullOrEmpty(C_Textbox.Text))
+            {
+                C = Int32.Parse(C_Textbox.Text);
+                //convertation
+                convert_CMYK_RGB();
+                convert_RGB_HSV();
+                update_info();
+            }
         }
 
         private void M_Textbox_TextChanged(object sender, EventArgs e)
         {
-            M = Int32.Parse(M_Textbox.Text);
-            //convertation
-            convert_CMYK_RGB();
-            convert_RGB_HSV();
-            update_info();
+            if (!String.IsNullOrEmpty(M_Textbox.Text))
+            {
+                M = Int32.Parse(M_Textbox.Text);
+                //convertation
+                convert_CMYK_RGB();
+                convert_RGB_HSV();
+                update_info();
+            }
         }
 
         private void Y_Textbox_TextChanged(object sender, EventArgs e)
         {
-            Y = Int32.Parse(Y_Textbox.Text);
-            //convertation
-            convert_CMYK_RGB();
-            convert_RGB_HSV();
-            update_info();
+            if (!String.IsNullOrEmpty(Y_Textbox.Text))
+            {
+                Y = Int32.Parse(Y_Textbox.Text);
+                //convertation
+                convert_CMYK_RGB();
+                convert_RGB_HSV();
+                update_info();
+            }
         }
 
         private void K_Textbox_TextChanged(object sender, EventArgs e)
         {
-            K = Int32.Parse(K_Textbox.Text);
-            //convertation
-            convert_CMYK_RGB();
-            convert_RGB_HSV();
-            update_info();
+            if (!String.IsNullOrEmpty(K_Textbox.Text))
+            {
+                K = Int32.Parse(K_Textbox.Text);
+                //convertation
+                convert_CMYK_RGB();
+                convert_RGB_HSV();
+                update_info();
+            }
         }
         private void H_Textbox_TextChanged(object sender, EventArgs e)
         {
-            H = Int32.Parse(H_Textbox.Text);
-            //convertation
-            convert_HSV_RGB();
-            convert_RGB_CMYK();
-            update_info();
+            if (!String.IsNullOrEmpty(H_Textbox.Text))
+            {
+                H = Int32.Parse(H_Textbox.Text);
+                //convertation
+                convert_HSV_RGB();
+                convert_RGB_CMYK();
+                update_info();
+            }
         }
 
         private void S_Textbox_TextChanged(object sender, EventArgs e)
         {
-            S = Int32.Parse(S_Textbox.Text);
-            //convertation
-            convert_HSV_RGB();
-            convert_RGB_CMYK();
-            update_info();
+            if (!String.IsNullOrEmpty(S_Textbox.Text))
+            {
+                S = Int32.Parse(S_Textbox.Text);
+                //convertation
+                convert_HSV_RGB();
+                convert_RGB_CMYK();
+                update_info();
+            }
         }
 
         private void V_Textbox_TextChanged(object sender, EventArgs e)
         {
-            V = Int32.Parse(V_Textbox.Text);
-            //convertation
-            convert_HSV_RGB();
-            convert_RGB_CMYK();
-            update_info();
+            if (!String.IsNullOrEmpty(V_Textbox.Text))
+            {
+                V = Int32.Parse(V_Textbox.Text);
+                //convertation
+                convert_HSV_RGB();
+                convert_RGB_CMYK();
+                update_info();
+            }
         }
         private void update_info()
         {
